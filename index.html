@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Little Lemon Restaurant</title>
+        <meta name="description" content="Little Lemon Restaurant">
+        <meta name="author" content="Jack">
+
+        <!-- Link to the JS file -->
+        <script>
+            const MY_API_KEY = "AIzaSyDYy5TKLNDXXQ_biSTtwP0RDfxmajx9zsI";
+        </script>
+
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <!-- Link to google's font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oldenburg&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+            <img class="logo desktop_logo" src="header_logo.png" alt="header logo">
+            <img class="logo mobile_logo" src="header_logo_s.png" alt="header logo">
+            <div class="navbar">
+                <nav class="main_nav">
+                    <ul>
+                        <li><a href="" class="active">Home</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Event</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+                <nav class="book_btn">
+                    <ul>
+                        <li><a href="">Book Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="introduction">
+                <section class="title">
+                    <article>
+                        <h1>On of The Top-Class Italian Restaurants in the world</h1>
+                    </article>
+                </section>
+                <section class="features">
+                    <article>
+                        <div class="img">
+                            <img src="feature1.png" alt="feature1 image">
+                        </div>
+                        <div class="subtitle">
+                            <h2>Traditional Classics and Innovative Creations</h2>
+                        </div>
+                        <p>Indulge in a symphony of flavors as you explore our extensive menu, boasting a harmonious fusion of traditional classics and innovative creations</p>
+                    </article>
+                    <article>
+                        <div class="img">
+                            <img src="feature2.png" alt="feature2 image">
+                        </div>
+                        <div class="subtitle">
+                            <h2>Exquisite Wine Selection</h2>
+                        </div>
+                        <p>Our curated wine selection showcases the finest vintages from renowned vineyards across Italy</p>
+                    </article>
+                    <article>
+                        <div class="img">
+                            <img src="feature3.png" alt="feature3 image">
+                        </div>
+                        <div class="subtitle">
+                            <h2>Rustic Charm and Timeless Elegance</h2>   
+                        </div>
+                        <p>Elegant dining space, adorned with rustic charm and timeless elegance, where the ambiance evokes a sense of warmth and conviviality</p>
+                    </article>
+                </section>
+            </section>
+            <section>
+                <article>
+                    <h1>Menu</h1>
+                    <p>Embark on a culinary journey through the vibrant flavors of Italy with our meticulously crafted menu. At Little Lemon, every dish is a masterpiece, reflecting the rich tapestry of Italian gastronomy. </p>
+                    <a href="">Read More</a>
+                </article>
+                <img src="menu.jpg" alt="menu section image">
+            </section>
+            <section>
+                <article>
+                    <h1>Host Events</h1>
+                    <p>At Little Lemon, we extend our warm embrace to unforgettable celebrations of all kinds. Whether you're marking a milestone birthday, exchanging vows in matrimonial bliss, or seeking a unique venue for a captivating concert, our exquisite establishment sets the stage for extraordinary moments.</p>
+                    <a href="">Read More</a>
+                </article>
+                <img src="host_events.jpg" alt="event hosting section image">
+            </section>
+            <section>
+                <article>
+                    <div>
+                        <h1>Canada</h1>
+                        <p>(416) 555-1234</p>
+                        <p>123 Fictional Street,</p>
+                        <p>Toronto, ON M5V 2E8</p>
+                        <a href="">Read More</a>
+                    </div>
+                    <div>
+                        <h1>Italy</h1>
+                        <p>+39 06 12345678</p>
+                        <p>Via del Sole Splendente,</p>
+                        <p>45Roma, RM 00184</p>
+                        <a href="">Read More</a>
+                    </div>
+                </article>
+                <img src="map.png" alt="map image">
+                <div>
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <img src="footer_logo.png" alt="footer logo">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Event</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+
+        <div id="map"></div>
+        <script>
+            (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+              key: MY_API_KEY,
+              v: "weekly",
+              // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+              // Add other bootstrap parameters as needed, using camel case.
+            });
+        </script>
+        <script src="js/index.js" type="module"></script>
+    </body>
+
+</html>

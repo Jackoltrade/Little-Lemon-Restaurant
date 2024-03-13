@@ -3,11 +3,11 @@
 }
 
 ::-webkit-scrollbar-track {
-background: #f1f1f100; 
+    background: #f1f1f100; 
 }
 
 ::-webkit-scrollbar-thumb {
-background: #29524A; 
+    background: #29524A; 
 }
 
 * {
@@ -19,6 +19,28 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     background-color: #C5AFA0;
+
+     /* Make text not selectable */
+    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* Safari and other WebKit-based browsers */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+h1 {
+    font-size: 42px;
+    font-family: "Oldenburg", serif;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 26px;
+    font-weight: 200;
 }
 
 .header {
@@ -50,18 +72,7 @@ body {
     object-fit: contain;
 }
 
-/* put to bottom */
-@media (min-width: 769px) {
-    .desktop_logo {
-        display: block;
-    }
-}
 
-@media (max-width: 768px) {
-    .mobile_logo {
-        display: block;
-    }
-}
 
 .navbar {
     width: 100%;
@@ -124,7 +135,6 @@ nav li {
     font-size: 30px;
     padding-left: 5px;
     padding-right: 5px;
-
 }
 
 .main_nav .active {
@@ -136,21 +146,6 @@ a:hover {
 }
 
 /* ------------start of main----------- */
-
-h1 {
-    font-size: 40px;
-    font-family: "Oldenburg", serif;
-}
-
-h2 {
-    font-size: 26px;
-    font-weight: 700;
-}
-
-p {
-    font-size: 26px;
-    font-weight: 200;
-}
 
 .introduction {
     padding-top: 100px;
@@ -200,6 +195,82 @@ p {
     width: 70%;
 }
 
+/* ------------services section----------- */
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.black-text {
+    color: #000000;
+}
+
+.white-text .button {
+    border: 2px solid white;
+}
+
+.black-text .button {
+    border: 2px solid black;
+}
+
+.white-text a {
+    color: white;
+}
+
+.black-text a {
+    color: black;
+}
+
+.background1 {
+    background-color: #495E57;
+}
+
+.background2 {
+    background-color: #E9BCB7;
+}
+
+.background3 {
+    background-color: #132D2A;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.service img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service article {
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.service h1 {
+    text-transform: uppercase;
+}
+
+.service .button {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.service a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 
 
 /* ------------map----------- */
@@ -210,3 +281,17 @@ p {
     border: red solid 5px;
 }
 
+
+
+
+@media (min-width: 769px) {
+    .desktop_logo {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile_logo {
+        display: block;
+    }
+}
